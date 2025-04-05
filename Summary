@@ -1,0 +1,45 @@
+Summary
+
+Project Title:
+Building a Data Pipeline Using Medallion Architecture in Microsoft Fabric
+Summary:
+I built a data pipeline using the Medallion Architecture (Bronze, Silver, Gold) in Microsoft Fabric. The goal was to organize raw data, clean it, and prepare it for reporting and analysis using tools and technologies like PySpark and Fabric.
+________________________________________
+What I Did:
+1.	Bronze Layer – Uploading Raw Data:
+o	Uploaded files into the Bronze Lakehouse.
+o	Faced issues reading the files, but solved them using PySpark.
+o	Saved the data in Delta format for better performance.
+o	Created a log file with ingestion time, row count, and file details.
+2.	Silver Layer – Cleaning and Transforming Data:
+o	Used a PySpark notebook to read data from the Bronze layer.
+o	Cleaned the data
+o	Wrote the cleaned data back to the Silver Lakehouse in table format.
+3.	Gold Layer – Final Data for Reporting:
+o	Used Copy Data activity to move data from Silver to Gold WareHouse.
+o	Applied aggregations and business rules using SQL .
+o	Created a log audit to record every transformation step for tracking and debugging.
+________________________________________
+Key Points:
+✅ Solved file format issues during raw data upload
+✅Logged metadata in both Lakehouses (lakehouse_metadata table)
+✅ Transformed and cleaned data using notebooks
+✅ Used SQL to apply final logic in the Gold Layer
+✅ Created logs and audits for traceability
+✅ Built a smooth, layered flow from raw data to final output.
+
+
+Challenges Faced:
+✅New Environment:
+Microsoft Fabric was a completely new platform for me.
+It took some time to understand the basic terminologies, structure, and how things work.
+
+✅Switching Between Environments:
+Initially, I found it confusing to switch between Lakehouses, Warehouses, and Pipelines, but it became easier as I got used to the flow.
+
+✅Permission Issues:
+The biggest challenge was that I couldn’t create my own Warehouse due to permission restrictions.
+To continue with the project, I had to use my colleague’s Warehouse for the Gold Layer.
+
+
+
