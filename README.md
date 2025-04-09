@@ -16,11 +16,11 @@ Goal: Clean and preprocess the data in the Silver Lakehouse.
 
 Actions:
 
-Remove duplicates ✅
+Remove duplicates 
 
-Handle null values ✅
+Handle null values 
 
-Cast data types for consistency ✅
+Cast data types for consistency 
 
 Store cleaned data in Silver Lakehouse 🏠
 
@@ -32,10 +32,12 @@ Actions:
 
 Copy Data: Transfer data from Silver Lakehouse to Gold Warehouse 🔄
 
-SQL Transformations: Perform joins, apply business logic, and aggregate data using SQL 🧑‍💻
+SQL Transformations: Perform joins, apply business logic, and aggregate data using SQL 
 
-Audit Log: Record each transformation in the audit log for tracking changes 📜
+Audit Log: Record each transformation in the audit log for tracking changes 
 
 Automation: Trigger transformations automatically after the data copy via a Stored Procedure ⚙️
 
 This project efficiently processes data in stages, ensuring clean, transformed, and business-ready datasets for final analysis and reporting. 🎯
+
+Note: The project_files_warehouse_queries consists of all the queries(transformation, business logic and also of table that can be used in Power BI.
